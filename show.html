@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Oluwatofarati Agbaje">
+    <meta name="description" content="Add MMA fighters to the UFC Roster">
+    <meta name="keywords" content="UFC, fighting, MMA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>UFC| Edit/Add To Roster</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <!--script rel="javascript" src=""-->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+     $(document).ready(function() {
+        $('select').formSelect();
+    });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              <span class="medium card-title"><i class="small
+                 material-icons">visibility</i>View Athlete</span>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="name" type="text" disabled>
+                  <label class="active" for="name">Name</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="nickname" type="text" disabled>
+                  <label class="active" for="nickname">Nickname</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="divisions" type="text" disabled>
+                  <label class="active" for="divisions">Division(s)</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="record" type="text" disabled>
+                  <label class="active" for="record">Record(W-L-D)</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="weight" type="text" disabled>
+                  <label class="active" for="weight">Weight</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="height" type="text" disabled>
+                  <label class="active" for="height">Height</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="titles" type="text" disabled>
+                  <label class="active" for="titles">Current Titles Held</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="age" type="text" disabled>
+                  <label class="active" for="age">Age</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="reach" type="text" disabled>
+                  <label class="active" for="reach">Reach</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="leg_reach" type="text" disabled>
+                  <label class="active" for="leg_reach">Leg Reach</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="hometown" type="text" disabled>
+                  <label class="active" for="hometown">Hometown</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="trains_at" type="text" disabled>
+                  <label class="active" for="trains_at">Trains At</label>
+                </div>
+              </div>
+            </div>
+            <div class="card-action">
+              <span><a id="close" href="index.html"><i class="tiny
+                 material-icons">close</i>Close</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
