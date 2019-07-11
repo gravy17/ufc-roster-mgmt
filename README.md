@@ -1,4 +1,4 @@
 # app-markup
-Project Name: RV Generator
+Project Name: UFC Roster Management
 Contributor: Oluwatofarati M. Agbaje
-Project idea description: A random variable generator that produces random values based on chosen probability distributions and parameter inputs
+Project idea description: A management system based on the logistics of a fight promotion company like the UFC
