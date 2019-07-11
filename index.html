@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Oluwatofarati Agbaje">
+    <meta name="description" content="The Ultimate Fighting Championship roster of MMA fighters">
+    <meta name="keywords" content="UFC, fighting, MMA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>UFC| Roster</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <!--script rel="javascript" src=""-->
+  </head>
+  <body>
+    <!--#c62828 red darken-3 -->
+    <!--#212121 grey darken-4 -->
+    <!--#424242 grey darken-3 -->
+    <!-- name nick wins losses draws div weight last fight champion-->
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="card grey darken-4">
+            <div class="card-content white-text">
+              <span class="medium card-title"><i class="small
+                 material-icons">search</i>Find Athlete</span>
+              <div class="row">
+                <div class="input-field col s12 m6 l4">
+                  <input value="" id="name" type="text">
+                  <label class="active" for="name">Name</label>
+                </div>
+                <div class="input-field col s12 m6 l4">
+                  <input value="" id="nickname" type="text">
+                  <label class="active" for="nickname">Nickname</label>
+                </div>
+                <div class="input-field col s12 m6 l4">
+                  <select>
+                    <option value="" disabled selected>Division(Choose)</option>
+                    <optgroup label="Men's Divisions">
+                      <option value="1">Men's Flyweight (116-125lb)</option>
+                      <option value="2">Men's Bantamweight (126-135lb)</option>
+                      <option value="3">Men's Featherweight (136-145lb)</option>
+                      <option value="4">Men's Lightweight (146-155lb)</option>
+                      <option value="5">Men's Welterweight (156-170lb)</option>
+                      <option value="6">Men's Middleweight (171-185lb)</option>
+                      <option value="7">Men's Light Heavyweight (186-205lb)</option>
+                      <option value="8">Men's Heavyweight (206-265lb)</option>
+                    </optgroup>
+                    <optgroup label="Women's Divisions">
+                      <option value="9">Women's Strawweight (106-115lb)</option>
+                      <option value="10">Women's Flyweight (116-125lb)</option>
+                      <option value="11">Women's Bantamweight (126-135lb)</option>
+                      <option value="12">Women's Featherweight (136-145lb)</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="card-action">
+              <a id="search" href="#" onclick="search();">Search</a>
+              <a id="clearSearch" href="#" onclick="clearSearch();">Clear</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <div class="card grey darken-4">
+            <div class="card-content white-text">
+              <span class="medium card-title"><i class="small
+                 material-icons">add</i>Add Athlete</span>
+            </div>
+            <div class="card-action">
+              <a id="Add" href="form.html">Add Athlete</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              <span class="medium card-title"><i class="small
+                 material-icons">people</i>Roster</span>
+            </div>
+            <div class="card-content black-text">
+              <table class="striped">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Nickname</th>
+                    <th>Record(W-L-D)</th>
+                    <th>Division(s)</th>
+                    <th>Weight</th>
+                    <th>Current Titles Held</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Henry Cejudo</td>
+                    <td>The Messenger</td>
+                    <td>17-1-0</td>
+                    <td>Men's Flyweight, Men's Bantamweight</td>
+                    <td>135lb</td>
+                    <td>Men's Flyweight Champion, Men's Bantamweight Champion</td>
+                    <td><span><a id="edit" href="#" onclick="edit();"><i class="tiny
+                       material-icons">edit</i></a>
+                    <a id="delete" href="#" onclick="delete();"><i class="tiny
+                       material-icons">delete</i></a></span></td>
+                  </tr>
+                  <tr>
+                    <td>Max Holloway</td>
+                    <td>Blessed</td>
+                    <td>20-3-0</td>
+                    <td>Men's Featherweight, Men's Lightweight</td>
+                    <td>155lb</td>
+                    <td>Men's Featherweight Champion</td>
+                    <td><span><a id="edit" href="#" onclick="edit();"><i class="tiny
+                       material-icons">edit</i></a>
+                    <a id="delete" href="#" onclick="delete();"><i class="tiny
+                       material-icons">delete</i></a></span></td>
+                  </tr>
+                  <tr>
+                    <td>Khabib Nurmagomedov</td>
+                    <td>The Eagle</td>
+                    <td>27-0-0</td>
+                    <td>Men's Lightweight</td>
+                    <td>155lb</td>
+                    <td>Men's Lightweight Champion</td>
+                    <td><span><a id="edit" href="#" onclick="edit();"><i class="tiny
+                       material-icons">edit</i></a>
+                    <a id="delete" href="#" onclick="delete();"><i class="tiny
+                       material-icons">delete</i></a></span></td>
+                  </tr>
+                  <tr>
+                    <td>Kamaru Usman</td>
+                    <td>Nigerian Nightmare</td>
+                    <td>15-1-0</td>
+                    <td>Men's Welterweight</td>
+                    <td>170lb</td>
+                    <td>Men's Welterweight Champion</td>
+                    <td><span><a id="edit" href="#" onclick="edit();"><i class="tiny
+                       material-icons">edit</i></a>
+                    <a id="delete" href="#" onclick="delete();"><i class="tiny
+                       material-icons">delete</i></a></span></td>
+                  </tr>
+                  <tr>
+                    <td>Robert Whittaker</td>
+                    <td>The Reaper</td>
+                    <td>21-4-0</td>
+                    <td>Men's Middleweight</td>
+                    <td>185lb</td>
+                    <td>Men's Middleweight Champion</td>
+                    <td><span><a id="edit" href="#" onclick="edit();"><i class="tiny
+                       material-icons">edit</i></a>
+                    <a id="delete" href="#" onclick="delete();"><i class="tiny
+                       material-icons">delete</i></a></span></td>
+                  </tr>
+                  <tr>
+                    <td>Jon Jones</td>
+                    <td>Bones</td>
+                    <td>24-1-0</td>
+                    <td>Men's Light Heavyweight</td>
+                    <td>205lb</td>
+                    <td>Men's Light Heavyweight Champion</td>
+                    <td><span><a id="edit" href="#" onclick="edit();"><i class="tiny
+                       material-icons">edit</i></a>
+                    <a id="delete" href="#" onclick="delete();"><i class="tiny
+                       material-icons">delete</i></a></span></td>
+                  </tr>
+                  <tr>
+                    <td>Daniel Cormier</td>
+                    <td>DC</td>
+                    <td>22-1-0</td>
+                    <td>Men's Light Heavyweight, Men's Heavyweight</td>
+                    <td>265lb</td>
+                    <td>Men's Heavyweight Champion, P4P #1</td>
+                    <td><span><a id="edit" href="#" onclick="edit();"><i class="tiny
+                       material-icons">edit</i></a>
+                    <a id="delete" href="#" onclick="delete();"><i class="tiny
+                       material-icons">delete</i></a></span></td>
+                  </tr>
+                  <tr>
+                    <td>Amanda Nunes</td>
+                    <td>The Lioness</td>
+                    <td>17-4-0</td>
+                    <td>Women's Bantamweight, Women's Featherweight</td>
+                    <td>135lb</td>
+                    <td>Women's Bantamweight Champion, Women's Featherweight Champion</td>
+                    <td><span><a id="edit" href="#" onclick="edit();"><i class="tiny
+                       material-icons">edit</i></a>
+                    <a id="delete" href="#" onclick="delete();"><i class="tiny
+                       material-icons">delete</i></a></span></td>
+                  </tr>
+                  <tr>
+                    <td>Valentina Shevchenko</td>
+                    <td>Bullet</td>
+                    <td>16-3-0</td>
+                    <td>Women's Flyweight</td>
+                    <td>125lb</td>
+                    <td>Women's Flyweight Champion</td>
+                    <td><span><a id="edit" href="#" onclick="edit();"><i class="tiny
+                       material-icons">edit</i></a>
+                    <a id="delete" href="#" onclick="delete();"><i class="tiny
+                       material-icons">delete</i></a></span></td>
+                  </tr>
+                  <tr>
+                    <td>Jessica Andrade</td>
+                    <td>Bate Estaca</td>
+                    <td>19-6-0</td>
+                    <td>Women's Strawweight</td>
+                    <td>115lb</td>
+                    <td>Women's Strawweight Champion</td>
+                    <td><span><a id="edit" href="#" onclick="edit();"><i class="tiny
+                       material-icons">edit</i></a>
+                    <a id="delete" href="#" onclick="delete();"><i class="tiny
+                       material-icons">delete</i></a></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+     $(document).ready(function() {
+        $('select').formSelect();
+    });
+    </script>
+  </body>
+</html>

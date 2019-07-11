@@ -1,0 +1,30 @@
+body{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+input:focus {
+  border-bottom: 1px solid #c62828 !important;
+  box-shadow: 0 1px 0 0 #c62828 !important;
+}
+label.active {
+  color: #c62828 !important;
+}
+.dropdown-content li, .dropdown-content li {
+  cursor: pointer;
+  background-color: #212121 !important;
+}
+.dropdown-content li>span, .dropdown-content li>span{
+  color: #fff !important;
+}
+.dropdown-content li:hover, .dropdown-content li:hover{
+  background-color: #c62828 !important;
+}
+.select-wrapper input.select-dropdown{
+  color: #9e9e9e !important;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+div.card-action a{
+  color: #9e9e9e !important;
+}
+div.card-action a:hover{
+  color: #c62828 !important;
+}
