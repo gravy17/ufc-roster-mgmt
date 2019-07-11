@@ -1,3 +1,8 @@
+/*Theme Colors:
+#c62828 red darken-3
+#212121 grey darken-4
+*/
+
 body{
   font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -27,4 +32,10 @@ div.card-action a{
 }
 div.card-action a:hover{
   color: #c62828 !important;
+}
+a#edit{
+  color: #212121;
+}
+a#delete{
+  color: #c62828;
 }
