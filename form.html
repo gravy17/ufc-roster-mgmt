@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Oluwatofarati Agbaje">
+    <meta name="description" content="Add MMA fighters to the UFC Roster">
+    <meta name="keywords" content="UFC, fighting, MMA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>UFC| Edit/Add To Roster</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <!--script rel="javascript" src=""-->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+     $(document).ready(function() {
+        $('select').formSelect();
+    });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="card grey darken-4">
+            <div class="card-content white-text">
+              <span class="medium card-title"><i class="small
+                 material-icons">edit</i>Add/Edit Athlete</span>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input value="" id="name" type="text" class="validate">
+                  <label class="active" for="name">Name</label>
+                </div>
+                <div class="input-field col s12">
+                  <input value="" id="nickname" type="text" class="validate">
+                  <label class="active" for="nickname">Nickname</label>
+                </div>
+                <div class="input-field col s12">
+                  <select multiple>
+                    <option value="" disabled>Division(Choose)</option>
+                    <optgroup label="Men's Divisions">
+                      <option value="1">Men's Flyweight (116-125lb)</option>
+                      <option value="2">Men's Bantamweight (126-135lb)</option>
+                      <option value="3">Men's Featherweight (136-145lb)</option>
+                      <option value="4">Men's Lightweight (146-155lb)</option>
+                      <option value="5">Men's Welterweight (156-170lb)</option>
+                      <option value="6">Men's Middleweight (171-185lb)</option>
+                      <option value="7">Men's Light Heavyweight (186-205lb)</option>
+                      <option value="8">Men's Heavyweight (206-265lb)</option>
+                    </optgroup>
+                    <optgroup label="Women's Divisions">
+                      <option value="9">Women's Strawweight (106-115lb)</option>
+                      <option value="10">Women's Flyweight (116-125lb)</option>
+                      <option value="11">Women's Bantamweight (126-135lb)</option>
+                      <option value="12">Women's Featherweight (136-145lb)</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="input-field col s12">
+                  <input value="" id="record" type="text">
+                  <label class="active" for="record">Record(W-L-D)</label>
+                </div>
+                <div class="input-field col s12">
+                  <input value="" id="weight" type="text" class="validate">
+                  <label class="active" for="weight">Weight</label>
+                </div>
+                <div class="input-field col s12">
+                  <input value="" id="height" type="text">
+                  <label class="active" for="height">Height</label>
+                </div>
+                <div class="input-field col s12">
+                  <input value="" id="titles" type="text">
+                  <label class="active" for="titles">Current Titles Held</label>
+                </div>
+                <div class="input-field col s12">
+                  <input value="" id="age" type="text">
+                  <label class="active" for="age">Age</label>
+                </div>
+                <div class="input-field col s12">
+                  <input value="" id="reach" type="text">
+                  <label class="active" for="reach">Reach</label>
+                </div>
+                <div class="input-field col s12">
+                  <input value="" id="leg_reach" type="text">
+                  <label class="active" for="leg_reach">Leg Reach</label>
+                </div>
+                <div class="input-field col s12">
+                  <input value="" id="hometown" type="text">
+                  <label class="active" for="hometown">Hometown</label>
+                </div>
+                <div class="input-field col s12">
+                  <input value="" id="trains_at" type="text">
+                  <label class="active" for="trains_at">Trains At</label>
+                </div>
+              </div>
+            </div>
+            <div class="card-action">
+              <span><a id="save" href="index.html" onclick="save();"><i class="tiny
+                 material-icons">save</i>Save</a></span>
+              <span><a id="cancelEdit" href="index.html"><i class="tiny
+                 material-icons">cancel</i>Cancel</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
