@@ -48,6 +48,6 @@ td>a{
 #click_Table td:hover {
     cursor: pointer;
 }
-#click_Table tr:hover {
+#click_Table tbody tr:hover {
     background-color: #c62828;
 }
